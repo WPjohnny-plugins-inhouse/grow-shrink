@@ -1,0 +1,8 @@
+div.grow-shrink-admin{
+ width:100%;
+ display:inline-grid;
+}
+.grow-shrink{
+  display: inline-grid;
+  width:100%;
+}

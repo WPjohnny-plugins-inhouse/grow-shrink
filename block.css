@@ -1,0 +1,29 @@
+div.grow-shrink {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+div.wp-block-gutenberg-grow-shrink-grow-shrink-block{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div.grow-shrink span{ 
+  font-family: arial;
+}
+.grow-shrink-front{
+  display: none;
+}
+
+.grow-shrink label{
+  display: none;
+}
+.grow-shrink input[type=text]{
+  display: none !important;
+}
