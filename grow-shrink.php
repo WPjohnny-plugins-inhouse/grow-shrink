@@ -5,7 +5,7 @@
  * Author URI: https://wpjohnny.com/
  * Donate link: https://www.paypal.me/wpjohnny
  * Version: 1.0
- * Description: Creates animated circle with text inside.
+ * Description: Creates animated circle with text inside. You can choose size, color, and animation.
  */
 
 // Load assets for wp-admin when editor is active
