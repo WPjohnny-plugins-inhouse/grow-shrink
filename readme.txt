@@ -32,7 +32,7 @@ Very simple circle animation plugin created for a client that wanted a meditatio
 Yes, this plugin works perfect with the latest version of WordPress! It also works with older versions as well but you should always run the latest WordPress and PHP version for best security and performance. This plugin is used on my critical sites so you can be assured it works perfect.
 
 = Will this plugin slow down my site? =
-No. It's very lightweight and tiny. It does only the essential function and nothing more. No heavy PHP processing or database queries. I'm an absolute speed fanatic. The frontend JS is only about 1-2KB.
+No. It's very lightweight and tiny (frontend JS is only about 1-2KB). It does only the essential function and nothing more. No heavy PHP processing or database queries. I'm an absolute speed fanatic.
 
 = Do you plan to add more features? =
 Probably not. This was intended as a free community plugin and to be as lightweight as possible. You're welcome to fork it and make your own.
