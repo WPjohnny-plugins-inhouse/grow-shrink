@@ -58,11 +58,11 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 				{
 					type: 'text', 
 					
-					value: 'Circle Max Radius (px)',
+					value: 'Circle max radius (px)',
 					
 					style: { width: '40%' }
 				},
-				'Circle Max Radius (px)'
+				'Circle max radius (px)'
 			),
 			el(
 				'input', 
@@ -83,7 +83,7 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 					
 					style: { width: '40%' }
 				},
-				'Circle Min Radius (px)'
+				'Circle min radius (px)'
 			),
 			el(
 				'input', 
@@ -104,7 +104,7 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 					
 					style: { width: '40%' }
 				},
-				'Circle Color'
+				'Circle color'
 			),
 			el(
 				'input', 
@@ -121,11 +121,53 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 				{
 					type: 'text', 
 					
+					value: 'Grow Animation Time (ms)',
+					
+					style: { width: '40%' }
+				},
+				'Circle grow time (ms)'
+			),
+			el(
+				'input', 
+				{
+					type: 'number', 
+					placeholder: '1000ms = 1 sec',
+					value: props.attributes.grow_period,
+					onChange: updateGrowPeriod,
+					style: { width: '60%' }
+				}
+			),
+			el(
+				'label', 
+				{
+					type: 'text', 
+					
+					value: 'Shrink Animation Time (ms)',
+					
+					style: { width: '40%' }
+				},
+				'Circle shrink time (ms)'
+			),
+			el(
+				'input', 
+				{
+					type: 'number', 
+					placeholder: '1000ms = 1 sec',
+					value: props.attributes.shrink_period,
+					onChange: updateShrinkPeriod,
+					style: { width: '60%' }
+				}
+			),
+			el(
+				'label', 
+				{
+					type: 'text', 
+					
 					value: 'Text Grow',
 					
 					style: { width: '40%' }
 				},
-				'Text Grow'
+				'Text grow'
 			),
 			el(
 				'input', 
@@ -146,7 +188,7 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 					
 					style: { width: '40%' }
 				},
-				'Text Shrink'
+				'Text shrink'
 			),
 			el(
 				'input', 
@@ -167,13 +209,13 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 					
 					style: { width: '40%' }
 				},
-				'Text Color'
+				'Text color (#hex)'
 			),
 			el(
 				'input', 
 				{
 					type: 'string', 
-					placeholder: 'Enter Text Color(#ff0000) here...',
+					placeholder: '#ff0000',
 					value: props.attributes.text_color,
 					onChange: updateTextColor,
 					style: { width: '60%' }
@@ -188,57 +230,15 @@ wp.blocks.registerBlockType('gutenberg-grow-shrink/grow-shrink-block', {
 					
 					style: { width: '40%' }
 				},
-				'Font Size (px)'
+				'Text size (px)'
 			),
 			el(
 				'input', 
 				{
 					type: 'number', 
-					placeholder: 'Enter Font Size here...',
+					placeholder: '32px',
 					value: props.attributes.fontsize,
 					onChange: updateFontSize,
-					style: { width: '60%' }
-				}
-			),
-			el(
-				'label', 
-				{
-					type: 'text', 
-					
-					value: 'Grow Animation Time (ms)',
-					
-					style: { width: '40%' }
-				},
-				'Grow Animation Time (ms)'
-			),
-			el(
-				'input', 
-				{
-					type: 'number', 
-					placeholder: 'Enter Grow Time here...',
-					value: props.attributes.grow_period,
-					onChange: updateGrowPeriod,
-					style: { width: '60%' }
-				}
-			),
-			el(
-				'label', 
-				{
-					type: 'text', 
-					
-					value: 'Shrink Animation Time (ms)',
-					
-					style: { width: '40%' }
-				},
-				'Shrink Animation Time (ms)'
-			),
-			el(
-				'input', 
-				{
-					type: 'number', 
-					placeholder: 'Enter Shrink Time here...',
-					value: props.attributes.shrink_period,
-					onChange: updateShrinkPeriod,
 					style: { width: '60%' }
 				}
 			)

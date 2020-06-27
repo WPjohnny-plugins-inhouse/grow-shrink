@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Gutenberg Grow Shrink Block
+ * Plugin Name: Grow Shrink Gutenberg Block
  * Author: WPJohnny
  * Author URI: https://wpjohnny.com/
  * Donate link: https://www.paypal.me/wpjohnny
  * Version: 1.0
- * Description: Circle is growing or shrinking based on entered interval time with entered circle color. Text will be placed in center of the circle with entered text color and font size, and the text is different when circle is growing or shrinking.
+ * Description: Creates animated circle with text inside.
  */
 
 // Load assets for wp-admin when editor is active

@@ -4,13 +4,13 @@ function draw(index, grow_period, shrink_period, grow_text, shrink_text, radius,
   var span = jQuery('.grow-shrink').eq(index).find('span');
   
   if (obj.hasClass('grow')) {
-    obj.css('transition', 'all ' + shrink_period + 'ms ease-in-out 400ms');
+    obj.css('transition', 'all ' + shrink_period + 'ms ease-in-out 800ms');
     span.css('transition', 'none');
-    span.fadeOut( 200, function() {
+    span.fadeOut( 400, function() {
       span.html(shrink_text);
-      span.fadeIn(200, function(){
+      span.fadeIn(400, function(){
         span.css('transform', 'scale(1)');
-        span.css('transition', 'all ' + (+shrink_period - 400) + 'ms ease-in-out');
+        span.css('transition', 'all ' + (+shrink_period - 800) + 'ms ease-in-out');
       });
     });
     obj.removeClass('grow');
@@ -18,13 +18,13 @@ function draw(index, grow_period, shrink_period, grow_text, shrink_text, radius,
     obj.css('height',min_radius);
     setTimeout(function() { draw(index, grow_period, shrink_period, grow_text, shrink_text, radius, min_radius); }, (+shrink_period));
   } else {
-    obj.css('transition', 'all ' + grow_period + 'ms ease-in-out 400ms');
+    obj.css('transition', 'all ' + grow_period + 'ms ease-in-out 800ms');
     span.css('transition', 'none');
-    span.fadeOut( 200, function() {
+    span.fadeOut( 400, function() {
       span.html(grow_text);
-      span.fadeIn(200, function(){
+      span.fadeIn(400, function(){
         span.css('transform', 'scale(' + scaleRate + ')');
-        span.css('transition', 'all ' + (+grow_period - 400) + 'ms ease-in-out');
+        span.css('transition', 'all ' + (+grow_period - 800) + 'ms ease-in-out');
       });
     });
     obj.addClass('grow');
